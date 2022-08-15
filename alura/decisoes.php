@@ -19,15 +19,18 @@ $idade = 17;
 $numeroDePessoas = 2;
 
 echo "Voce so pode entrar se tiver a prtir de 18 anos ou ";
-echo "a partir de 16 anos acompanhado" .PHP_EOL;
+echo "a partir de 16 anos acompanhado" . PHP_EOL;
 
 if ($idade >= 18) {
   echo "Voce tem $idade anos. Pode entrar sozinho.";
-} else if ($idade >= 16 && $numeroDePessoas > 1)  {
-    echo "Voce tem $idade anos, está acompanhado(a), entao pode entrar.";
+} else if ($idade >= 16 && $numeroDePessoas > 1) {
+  echo "Voce tem $idade anos, está acompanhado(a), entao pode entrar.";
 } else {
-   echo "Voce so tem $idade anos. Voce nao pode entar.";
+  echo "Voce so tem $idade anos. Voce nao pode entar.";
+  echo PHP_EOL . "É uma pena";
 }
+
+// Se voce tiver apenas uma linha apos a condicao nao e necessario colocar { } ele executa a UNICA linha apos ela e "finaliza" o bloco
 
 
 echo PHP_EOL;
